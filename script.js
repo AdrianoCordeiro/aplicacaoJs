@@ -1,10 +1,10 @@
-/*Criando uma função */ 
+/*Criando uma função */
 
 
-const convertButton = document.querySelector (".convert-button")  
-const currencySelect = document.querySelector("currency-select")
+const convertButton = document.querySelector(".convert-button")
+const currencySelect = document.querySelector(".currency-select")
 
-function convertValues(){
+function convertValues() {
     const inputCurrencyValue = document.querySelector(".input-currency").value /*Criação de variavél*/
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert") //valor em real
     const currencyValueConverted = document.querySelector(".currency-value") //outras Moedas
@@ -13,22 +13,22 @@ function convertValues(){
     const euroToday = 6.2
 
 
-    if(currencySelect.value == "Dolar" ){
+    if (currencySelect.value == 'dolar') {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
-            currency: "USD"  
+            currency: "USD"
         }).format(inputCurrencyValue / dolarToday)
     }
-    if(currencySelect.value == "Euro" ){
+    if (currencySelect.value == "euro") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
-            currency: "EUR"  
+            currency: "EUR"
         }).format(inputCurrencyValue / euroToday)
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-br", {
         style: "currency",
-        currency: "BRL"  
+        currency: "BRL"
     }).format(inputCurrencyValue)
 
 }
