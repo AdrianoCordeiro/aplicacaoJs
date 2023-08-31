@@ -13,7 +13,7 @@ function convertValues() {
     const euroToday = 6.2
 
 
-    if (currencySelect.value == 'dolar') {
+    if (currencySelect.value == "dolar") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
