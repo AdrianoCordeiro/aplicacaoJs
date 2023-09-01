@@ -8,7 +8,7 @@
 
 body {
     background-color: #a268f8;
-    
+
 }
 
 .logo {
@@ -32,7 +32,8 @@ label {
     font-size: 14px;
 }
 
-select, input {
+select,
+input {
     background: #ffffff;
     border: 1px solid #bbbbbb;
     border-radius: 4px;
@@ -47,7 +48,7 @@ select, input {
     cursor: pointer;
 }
 
-button{
+button {
     width: 327px;
     height: 48px;
     top: 329px;
@@ -58,20 +59,20 @@ button{
     font-weight: 700;
     font-size: 18px;
     cursor: pointer;
-    
+
 }
 
 
 
-button:hover{
+button:hover {
     opacity: 0.8;
 }
 
-button:active{
+button:active {
     opacity: 0.6;
 }
 
-section{
+section {
     border: 1px solid #772fd3;
     border-radius: 20px;
 
@@ -87,23 +88,23 @@ section{
     align-items: center;
 }
 
-.arrow{
+.arrow {
     margin: 15px 0;
 }
 
-.currency-box{
+.currency-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4p3;
 }
 
-.currency{
-color: #777777;
-font-size: 14px;
+.currency {
+    color: #777777;
+    font-size: 14px;
 }
 
-.currency-value, .currency-value-to-convert{
+.currency-value, .currency-value-to-convert {
     color: #555555;
     font-weight: 700;
     font-size: 20px;
